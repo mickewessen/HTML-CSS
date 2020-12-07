@@ -1,0 +1,121 @@
+#review {
+
+    .container {
+
+        .picture {
+            display: none;
+
+            @include lg {
+                display: flex;
+            }
+        }
+
+        .review-information {
+            text-align: center;
+            padding: 1rem;
+
+            @include lg {
+                width: 27rem;
+                text-align: left;
+                margin-left: 8rem;
+                margin-bottom: 9rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+                color: $darkgray;
+                font-weight: bold;
+
+                @include lg {
+                    font-size: 3rem;
+                    margin-bottom: 0px;
+                }
+            }
+            
+            p {
+                font-size: 1.2rem;
+                color: $lightgray;
+                font-family: $font-secondary;
+
+                @include lg {
+                    font-size: 1.125rem;
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+    
+    .review-testominals {
+        padding: 1rem;
+        position: relative;
+        margin: 0 auto;
+
+        .box {
+            padding: 1rem;
+            background-color: $orange;
+            color: $white;
+            border-radius: 10px;
+
+            @include md {
+                width: 30rem;
+                padding: 2rem;
+            }
+
+            @include lg {
+                position: absolute;
+                top: -10rem;
+                left: 45rem;
+                width: 35.625rem;
+                height: 16.1rem;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+                font-weight: 100;
+
+                @include md {
+                    font-size: 2rem;
+                }
+
+                @include lg {
+                    font-size: 1.25rem;
+                }
+            }
+
+            h2 {
+                font-size: 1rem;
+                font-weight: normal;
+
+                @include md {
+                    font-size: 1.2rem;
+                }
+
+                @include lg {
+                    font-size: 0.875rem;
+                }
+            }
+
+            span {
+                font-size: 0.8rem;
+                font-weight: normal;
+
+                @include md {
+                    font-size: 1.2rem;
+                }
+
+                @include lg {
+                    font-size: 1rem;
+                }
+            }
+        }
+        .arrows {
+            text-align: center;
+
+            @include lg {
+                position: absolute;
+                right: 27rem;
+                bottom: -4.5rem;
+            }
+        }
+    }
+}
