@@ -1,0 +1,139 @@
+#flow {
+    background-color: $white;
+
+    @include lg {
+        background-color: $white;
+        background-image: url(../../backgrounds/flow/background.svg);
+        background-repeat: no-repeat;
+        background-position: -300px -150px;
+    }
+
+    .container {
+        padding-bottom: 4rem;
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:            "ti"
+                                        "b1"
+                                        "b2"
+                                        "b3";
+        gap: 1rem;
+        text-align: center;
+
+        @include md {
+            grid-template-columns: 1fr;
+            grid-template-areas:            "ti"
+                                            "p1"
+                                            "b1"
+                                            "b2"
+                                            "b3";
+        }
+
+        @include lg {
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:            "p1 ti"                                            
+                                            "p1 b1"
+                                            "p1 b2"
+                                            "p1 b3";
+        }
+
+        .picture {
+            display: none;
+
+            @include md {
+
+                img {
+                    width: 35rem;
+                }
+                display: block;
+            }
+
+            @include lg {
+                img {
+                    width: 42.8rem;
+                    height: 35rem;
+                }
+                display: block;
+                position: relative;
+                left: -120px;
+                top: 70px;
+            }
+        }
+
+        .flow-information {
+            
+            h1 {
+                font-size: 2rem;
+                color: $darkgray;
+
+                @include lg {
+                    text-align: left;
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .box {
+
+            text-align: center;
+
+            @include lg {
+                text-align: left;
+            }
+
+            h1 {
+                color: $pink;
+                font-size: 3rem;
+                font-weight: bolder;
+
+                @include lg {
+                    font-size: 3.75rem;
+                    margin-bottom: 0;
+                }
+            }
+
+            text {
+                color: $darkgray;
+                font-size: 1.5rem;
+                
+
+                @include lg {
+                    font-size: 1.5rem;
+                }
+            }
+
+            p {
+                color: $lightgray;
+                font-family: $font-secondary;
+                font-size: 1.5rem;
+
+                @include lg {
+                    font-size: 1.125rem;
+                    margin-top: 0;
+                    padding-right: 5rem;
+                }
+            }
+
+        }
+
+
+    }
+}
+
+.flow-information {
+    grid-area: ti;
+}
+
+.picture {
+    grid-area: p1;
+}
+#box-1 {
+    grid-area: b1;   
+}
+#box-2 {
+    grid-area: b2;
+}
+#box-3 {
+    grid-area: b3;
+}
+

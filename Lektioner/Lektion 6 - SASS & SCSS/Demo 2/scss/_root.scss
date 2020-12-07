@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    @include defalt-font;
+    margin: 0;
+}
+

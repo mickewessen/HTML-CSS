@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Roboto Slab', serif; */
+
+html, body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media (min-width: 768px) {
+    .container {max-width: 720px;}
+}
+@media (min-width: 992px) {
+    .container {max-width: 960px;}
+}
+@media (min-width: 1200px) {
+    .container {max-width: 1120px;}
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.back-top-top {
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    color: #2baaec;
+    font-size: 2.5rem;       
+}
+.back-top-top:hover {
+    color: #25e6c8;      
+}
+
+#navbar-top {
+    display: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    border-bottom: 1px solid #c3bfbf;
+}
+@media (min-width: 768px) {
+    #navbar-top {display: block;}
+}
+
+#navbar-top .hours{
+    font-size: 1rem;
+}
+
+#navbar-top .hours i {
+    font-size: 1.2em;
+    margin-right: 0.5rem;
+    color: #2baaec;
+}
+
+#navbar-top .nav-links{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+#navbar-top .nav-link{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#navbar-top .nav-link:last-child{
+    padding-right: 0rem;
+}
+
+#navbar-top .nav-link a {
+    color: #2baaec;
+    text-decoration: none;
+}
+
+#navbar-top .nav-link:hover a {
+    color: #25e6c8;
+}
+
+#navbar {
+    position: sticky;
+    top: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    color: white;
+}
+@media (min-width: 768px) {
+    #navbar-top {display: block;}
+}
+
+.whitespace {
+    height: 2000px;
+}

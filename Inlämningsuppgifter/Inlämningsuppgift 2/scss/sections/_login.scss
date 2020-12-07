@@ -1,0 +1,103 @@
+#container {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+
+    .sign-in {
+        max-width: 20rem;
+        padding: 1rem 2rem 1rem;
+        margin: 0 auto;
+        background-color: $white;
+        border: 1px solid rgba(0,0,0,0.1);  
+
+        @include md {
+            max-width: 30rem;
+            margin-top: 1rem;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+            text-align: center;
+            color: $darkgray;
+
+            i {
+                color: $lightblue;
+                font-size: 2.5rem;
+                margin-left: 1rem;
+            }
+        }
+
+        input[type=text] {
+            font-size: 0.8rem;
+        }
+        
+        
+        .checkbox {
+            margin-bottom: 30px;
+            font-weight: normal;
+            font-size: 0.8rem;
+        } 
+
+        .form-control {
+            position: relative;
+            font-size: 16px;
+            height: auto;
+            padding: 10px;;
+        }
+
+        .create-account {
+            margin-top: 1rem;
+
+            span {
+                font-size: 0.8rem;
+            }
+
+            a {
+                margin-left: 0.5rem;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+        }
+
+        .forgot-password {
+            margin-top: 1rem;
+
+            span {
+                font-size: 0.8rem;
+            }
+
+            a {
+                margin-left: 0.5rem;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+        }
+
+        .social-login {
+            margin-top: 1rem;
+            margin-bottom: 0rem;
+            text-align: center;
+
+            a {
+                color: $white;
+                background: $lightblue;
+                border-radius: 50%;
+                height: 3rem;
+                width: 3rem; 
+
+                &:hover {
+                    background: $blue;
+                }
+            }
+
+            i {
+                font-size: 1.5rem;
+                padding: 0.8rem;
+            }
+        }
+    }  
+
+
+    #button {
+        margin-bottom: 2rem;
+    }
+}

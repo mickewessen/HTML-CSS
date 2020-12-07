@@ -1,0 +1,71 @@
+#showcase {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    background-color: #DEDEDE;
+
+    .showcase-logo .logo {
+        display: none;
+
+        @include md {
+            // display: block;
+            width: 25rem;
+        }
+        @include lg {
+            width: 30rem;
+            display: block;
+        }
+    }
+
+    .showcase-info {
+        margin-left: 0rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        
+
+        @include md {
+            margin-bottom: 2rem;
+        }
+
+        @include lg {
+            text-align: left;
+            margin-left: 5rem;
+
+        }
+
+        h1 {
+            font-weight: bold;
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.5rem;
+            color: #363636;
+
+            @include md {
+                font-weight: none;
+                font-size: 2rem;
+            }
+
+            @include lg {
+                font-size: 3rem;
+            }
+        }
+
+        p {
+            color: #626262;
+            font-size: 1rem;
+        }
+    }
+
+    .showcase-button {
+        height: 2.5rem;
+        width: 12rem;
+        font-size: 1rem;
+        background-color: $green;
+        color: $white;
+        font-weight: bold;
+        border-radius: 0.3rem;
+        border: 1px solid transparent;
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
+}

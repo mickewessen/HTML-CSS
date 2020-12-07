@@ -1,0 +1,148 @@
+#tools {
+    background-color: $white;
+    margin-top: 3rem;
+
+    @include lg {
+        padding-bottom: 5rem;
+        padding-top: 0rem;
+    }
+
+    .icons {
+        display: none;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 30rem;
+        padding-right: 30rem;
+        padding-bottom: 10rem;
+        filter: grayscale(1);
+
+        @include lg {
+            display: flex;
+        }
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:            "ti"
+                                        "b1"
+                                        "b2"
+                                        "b3"
+                                        "b4";
+        gap: 1rem;   
+        text-align: center;
+
+        @include md {
+            grid-template-columns: 1fr 1fr ;
+            grid-template-areas:        "ti ti"
+                                        "b1 b2"
+                                        "b3 b4";
+        }
+
+        @include lg {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:        "ti b1 b2"
+                                        "ti b3 b4";
+        }
+
+        .tools-information {
+            text-align: center;
+            
+            @include lg {
+                text-align: left;
+            }
+
+            h1 {
+                color: $darkgray;
+                font-size: 2rem;
+
+                @include lg {
+                    font-size: 3rem;
+                    margin-top: 0;
+                    padding-right: 1rem;
+                }
+            }
+
+            p {
+                color: $lightgray;
+                font-family: $font-secondary;
+                font-size: 1.2rem;
+            }
+
+            .btn {
+                background: linear-gradient(to right, #F23779, #FF6803, #FFA62E);
+                color: $white;
+                font-family: $font-secondary;
+                border: none;
+                border-radius: 5px;
+                height: 2rem;
+                width: 15rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+
+                @include md {
+                    height: 3rem;
+                    width: 18rem;
+                    font-size: 1.2rem;
+                }
+
+                @include lg {
+                    height: 3.125rem;
+                    width: 8.75rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .box {
+            background-color: $white;
+            border-radius: 5%;
+            padding: 1rem;
+
+            @include lg {
+                text-align: left;
+                padding-left: 5rem;
+            }
+
+            h1 {
+                color: $darkgray;
+
+                @include lg {
+                    font-size: 1.5rem;
+                    text-align: left;
+                }
+            }
+
+            p {
+                color: $lightgray;
+                font-family: $font-secondary;
+
+                @include lg {
+                    font-size: 1.2rem;
+                    padding-right: 5rem;
+                }
+            }
+
+        }
+    }  
+}
+
+
+.tools-information {
+    grid-area: ti;
+}
+#box-1 {
+    grid-area: b1;    
+}
+#box-2 {
+    grid-area: b2;
+}
+#box-3 {
+    grid-area: b3;
+}
+#box-4 {
+    grid-area: b4;
+
+} 

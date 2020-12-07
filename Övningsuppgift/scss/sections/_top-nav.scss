@@ -1,0 +1,153 @@
+#top-nav {
+    background-color: $gray;
+
+    .container {
+        height: 5rem;
+        padding-top: 1rem;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.137);
+
+        .icon {
+
+            img {
+                height: 1.5rem;
+                width: 1.5rem;     
+                margin-right: 1rem;   
+                
+                @include lg {
+                    height: 2.5rem;
+                    width: 2.5rem;
+                }
+            }
+    
+            span {
+                font-size: 1.3rem;
+                font-weight: bolder;
+                font-family: $font-primary;
+
+                @include md {
+                    font-size: 0.6rem;
+                }
+
+                @include lg {
+                    font-size: 1.875rem;
+                }
+
+            }
+
+        }
+
+        .nav-links {
+            list-style: none;
+            display: none;
+            margin: 0;
+
+            @include md {
+                display: flex;
+            }
+            
+
+            span {
+                border: 1px solid #FF6803;
+                border-radius: 5px;
+                padding-left: 0.7rem;
+                padding-right: 0.7rem;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                font-family: $font-secondary;
+                color: $darkgray;
+
+                
+                @include md {
+                    font-size: 0.7rem;
+                }
+
+                @include lg {
+                    font-size: 1rem;
+                }
+            }
+            
+
+            .nav-link {
+                padding-right: 2rem;
+                
+
+                a {
+                    font-size: 0.8rem;
+                    text-decoration: none;
+                    font-family: $font-secondary;
+                    color: $darkgray;
+                    
+                    @include md {
+                     font-size: 0.7rem;
+                    }
+
+                    @include lg {
+                        font-size: 1.1rem;
+                    }
+                }
+
+                i {
+                    font-size: 0.8rem;
+                    
+                    @include md {
+                        font-size: 0.7rem;
+                     }
+
+                     @include md {
+                        font-size: 1.1rem;
+                     }
+                }
+
+            }
+        }   
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 2rem;
+
+            .button {
+
+                color: $darkgray;
+                font-weight: bold;
+                height: 1rem;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                border: 1px solid $darkgray;
+                cursor: pointer;
+    
+                &:hover, dropbtn:focus {
+                    background-color: $darkgray;
+                }
+    
+                @include md {
+                    display: none;
+                }           
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 10px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+
+                a {
+                    color:#363636;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    display: block; 
+    
+                    &:hover {
+                        background-color: #ddd;
+                    }
+                }
+            }
+            .show {
+                display: block;
+            } 
+        }
+        
+    }
+}

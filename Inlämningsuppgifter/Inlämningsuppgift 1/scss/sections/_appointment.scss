@@ -1,0 +1,46 @@
+#appointment {
+    background: #2ba8ecc4;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .appointment-info {
+        display: none;
+        color: $white;
+
+        text {
+            font-size: 1.3rem;
+
+            @include lg {
+                font-size: 1.6rem;
+            }
+        }
+
+        @include md {
+            display: block;
+        }
+    }
+
+    .appointment-button {
+        height: 3rem;
+        width: 18rem;
+        background: $white;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        margin: auto;
+        color: #2ba8ecc4;
+        font-weight: bold;
+
+        &:hover {
+            background-color: #2ba8ecc4;
+            color: $white;
+            border: 2px solid $white;
+            font-weight: bold;
+        }
+
+        @include md {
+            height: 2.5rem;
+            width: 14rem;
+            margin: 0rem;
+        }
+    }
+}

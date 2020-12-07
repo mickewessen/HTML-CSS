@@ -1,0 +1,144 @@
+#services {
+    background-color: #f7f7f7;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:            "ti"
+                                        "b1"
+                                        "b2"
+                                        "b3"
+                                        "b4"
+                                        "b5"
+                                        "b6";
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+
+
+        @include md {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:        "ti ti ti"
+                                        "b1 b2 b3"
+                                        "b4 b5 b6";
+            padding-top: 3rem;
+        }
+
+        .title {
+            margin-bottom: 1rem; 
+
+            @include md {
+                border-bottom: 1px solid transparent;
+                margin-bottom: 3rem;
+            }
+    
+            text {
+                font-size: 1.5rem;
+                font-weight: bold;
+                border-bottom: 3px solid #25e6c8; 
+                color: $darkgray;                
+
+                @include md {
+                    border-bottom: 3px solid #25e6c8;
+                    font-size: 2.5rem;
+                    font-weight: normal;
+
+                }
+            }
+        }
+    }  
+
+
+    .service-box {
+        background: $white;
+        font-family: 'Roboto Slab', serif;  
+        color: $darkgray;
+        padding-top: 1rem; 
+        padding-bottom: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 10px;
+        border-radius: 5%;
+
+        @include lg {
+            height: 25rem;
+            padding-top: 5rem;
+        }
+
+        &:hover {
+            box-shadow: 3px 5px 12px #cac8c8;
+        }
+
+        .dot {
+            display: inline-block;
+            background-color: $green;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%; 
+            align-items: center;
+            vertical-align: middle;
+
+            
+            &:hover {
+               background-color: $blue; 
+               border: 7px solid #d5ebf6;
+            }
+
+            @include md {
+                width: 6rem;
+                height: 6rem; 
+            }
+
+            img {
+                display: flex;
+                margin: auto;
+                height: 3rem;
+                margin-top: 0.8rem;
+
+                @include md {
+                    height: 3.5rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: $darkgray;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $gray;
+
+            @include md {
+                padding: 0rem 2rem;
+            }
+        }
+    }    
+}
+
+
+#service-title {
+    grid-area: ti;
+}
+#service-box-1 {
+    grid-area: b1;    
+}
+#service-box-2 {
+    grid-area: b2;
+}
+#service-box-3 {
+    grid-area: b3;
+}
+#service-box-4 {
+    grid-area: b4;
+}
+#service-box-5 {
+    grid-area: b5;
+}
+#service-box-6 {
+    grid-area: b6;
+}

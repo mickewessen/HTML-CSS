@@ -1,0 +1,40 @@
+#footer {
+    background-color: $footer;
+
+    .container {
+        padding-top: 1rem;
+        color: $white;
+
+        .creater {
+            font-size: 1.2rem;
+            text-align: center;
+            letter-spacing: 2px;
+
+            @include lg {
+                font-size: 1.9rem;
+            }
+
+            img {
+                width: 3vh;
+                vertical-align: middle;
+
+                @include lg {
+                    width: 2.5rem;
+                }
+            }
+        }
+
+
+        .copyright {
+            font-family: $font-secondary;
+            font-size: 0.6rem;
+            text-align: center;
+            padding-bottom: 0.5rem;
+
+            @include lg {
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+}

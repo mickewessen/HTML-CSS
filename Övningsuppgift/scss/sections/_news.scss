@@ -1,0 +1,176 @@
+#news {
+    background-color: $white;
+
+    .container {
+        padding-top: 2rem;
+
+        .news-information {
+            text-align: center;
+
+            @include lg {
+                margin-left: 20rem;
+                margin-right: 20rem;
+                margin-bottom: 2rem;
+            }
+
+            h1 {
+                color: $darkgray;
+                font-size: 2rem;
+
+                @include lg {
+                    font-size: 3rem;
+                    margin-bottom: 0;
+                }
+            }
+
+            p {
+                color: $lightgray;
+                font-size: 1.2rem;
+
+                @include lg {
+                    font-size: 1.125rem;
+                    padding: 1rem 3rem;
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .news-box-container {
+            text-align: center;
+            display: block;
+            gap: 2rem;
+
+            @include lg {
+                display: flex;
+                text-align: left;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .news-box {
+                box-shadow: 3px 5px 12px #cac8c8;
+                margin-bottom: 2rem;
+
+                .box-information {
+                    padding: 1rem;
+                    padding-bottom: 2rem;
+
+                    p {
+                        color: $orange;
+                        margin-bottom: 0;
+
+                        @include md {
+                            font-size: 1.2rem;
+                        }
+                    }
+    
+                    h1 {
+                        color: $darkgray;
+                        font-size: 1rem;
+                        margin-top: 0;
+
+                        @include md {
+                            font-size: 1.4rem;
+                        }
+                    }
+    
+                    span {
+                        color: $lightgray;
+                        font-family: $font-secondary;                        
+
+                        @include md {
+                            font-size: 1.1rem;
+                        }
+                    }
+
+                    button {
+                        font-family: $font-secondary;
+                        color: $white;
+                        border-radius: 5px;
+                        border: none;
+                        background: linear-gradient(to right, #F23779, #FF6803, #FFA62E);
+                        color: $white;
+                        width: 15rem;
+                        height: 2rem;
+
+                        @include md {
+                            width: 18rem;
+                            height: 2.8rem;
+                            font-size: 1.5rem;
+                        }
+
+                        @include lg {
+                            margin-top: 2rem;
+                            width: 7.5rem;
+                            font-size: 0.875rem;
+                        }
+                    }
+    
+                }
+            }
+ 
+        }
+
+        .get-started {
+            text-align: center;
+            background-image: url(../../backgrounds/news/background.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 0.1rem;
+            padding-bottom: 1rem;
+
+
+            .get-started-info {
+                color: $white;
+
+                @include lg {
+                    padding: 2rem 5rem;
+                }
+                
+                h1 {
+                    font-size: 1.2rem;
+
+                    @include md {
+                        font-size: 2.25rem;
+                    }
+
+                    @include lg {
+                        margin-right: 18rem;
+                        text-align: left;
+                    }
+                }
+
+                @include lg {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+
+            .btn {
+                color: $white;
+                font-family: $font-secondary;
+                background: linear-gradient(to right, #24BFB6, #31D0A8, #35D6A3, #3FE298, #41E595);
+                width: 15rem;
+                height: 2rem;
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+
+                @include md {
+                    width: 18rem;
+                    height: 3.6rem;
+                    font-size: 1.2rem;
+                }                
+
+                @include lg {
+                    width: 13rem;
+                    height: 3.6rem;
+                    font-size: 1.125rem;
+                }
+            }
+        }
+    }
+}

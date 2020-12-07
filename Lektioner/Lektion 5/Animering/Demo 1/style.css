@@ -1,0 +1,33 @@
+.animate {
+    position: relative;
+/* 
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease-out; */
+
+    animation: slide-around 3s ease infinite forwards;
+}
+@keyframes slide-in {
+    0% {left: -100px;}
+    100% {left: 100px;}
+}
+
+@keyframes slide-out {
+
+    0% {left: 100px;}
+    100% {left: -100px;}
+}
+
+@keyframes slide-around {
+
+    0% {top: 0; left: 0;}
+    25% {top: 0; left: calc(100% - 100px);}
+    50% {top: calc(100% - 100px); left: calc(100% - 100px);}
+    75% {top: calc(100% - 100px); left:0;}
+    100% {top: 0; left: 0;}
+}

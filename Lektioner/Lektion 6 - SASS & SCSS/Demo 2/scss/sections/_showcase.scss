@@ -1,0 +1,5 @@
+#showcase {
+    @include set-colors($gray);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1170" height="220.002" viewBox="0 0 1170 220.002">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.14" y1="0.312" x2="0.804" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ee307a"/>
+      <stop offset="1" stop-color="#fc8b53"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.078" y1="0.171" x2="0.803" y2="1.223" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffdd03"/>
+      <stop offset="1" stop-color="#800273"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.818" x2="0.5" y2="1.189" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#03a9ff"/>
+      <stop offset="1" stop-color="#802902"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="1.083" y1="-0.612" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff033f"/>
+      <stop offset="1" stop-color="#380280"/>
+    </linearGradient>
+  </defs>
+  <g id="Bg" transform="translate(-215 -5774)">
+    <rect id="Rectangle_107" data-name="Rectangle 107" width="1170" height="220" transform="translate(215 5774)" fill="url(#linear-gradient)"/>
+    <path id="Subtraction_5" data-name="Subtraction 5" d="M-725-480H-890.352A151.953,151.953,0,0,1-900-533.5a153.577,153.577,0,0,1,3.1-30.734,151.725,151.725,0,0,1,8.886-28.625,152.551,152.551,0,0,1,14.061-25.9,153.574,153.574,0,0,1,18.621-22.569,153.6,153.6,0,0,1,22.57-18.622,152.508,152.508,0,0,1,25.9-14.06,151.731,151.731,0,0,1,28.626-8.886A153.577,153.577,0,0,1-747.5-686a154.51,154.51,0,0,1,22.5,1.65V-480Z" transform="translate(2110 6474)" opacity="0.41" fill="url(#linear-gradient-2)"/>
+    <path id="Subtraction_2" data-name="Subtraction 2" d="M-686.5-475a154.646,154.646,0,0,1-21.5-1.505V-652h172.042A154.153,154.153,0,0,1-534-627.5a153.645,153.645,0,0,1-3.1,30.734,151.734,151.734,0,0,1-8.886,28.625,152.563,152.563,0,0,1-14.061,25.9,153.643,153.643,0,0,1-18.622,22.569,153.586,153.586,0,0,1-22.569,18.622,152.5,152.5,0,0,1-25.9,14.06,151.739,151.739,0,0,1-28.626,8.887A153.645,153.645,0,0,1-686.5-475Z" transform="translate(923 6426)" opacity="0.09" fill="url(#linear-gradient-3)"/>
+    <path id="Subtraction_3" data-name="Subtraction 3" d="M-277.136-650H-795.863c11.223-16.117,25.835-31.116,43.43-44.584a284.756,284.756,0,0,1,60.08-34.769,365.114,365.114,0,0,1,73.166-22.592A422.244,422.244,0,0,1-536.5-760a422.245,422.245,0,0,1,82.688,8.055,365.111,365.111,0,0,1,73.166,22.592,284.757,284.757,0,0,1,60.08,34.769c17.6,13.468,32.207,28.468,43.43,44.584Z" transform="translate(1557 6644)" opacity="0.19" fill="url(#linear-gradient-4)"/>
+  </g>
+</svg>

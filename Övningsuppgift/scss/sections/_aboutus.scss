@@ -1,0 +1,189 @@
+#about-us {
+    margin-top: 2rem;
+    background-color: $footer;
+    color: $white;
+    border-bottom: gray;
+
+    .container {
+        padding-top: 1rem;
+
+        @include md {
+            display: flex;
+            padding-bottom: 2rem;
+            justify-content: space-between;
+        }
+
+        .about-us-information {
+
+            h1 {
+                font-size: 1.2rem;
+
+                @include lg {
+                    font-size: 1.9rem;
+                }
+            }
+
+            p {
+                font-family: $font-secondary;
+                font-size: 0.8rem;
+
+                @include lg {
+                    font-size: 1rem;
+                    width: 21.75rem;
+                    text-align: justify;
+                }
+            }
+
+            .subscribe {
+
+                input[type="email"] {
+                    padding-left: 3rem;
+                    width: auto;
+                    height: 2.1rem;
+                    border: none;
+                    border-radius: 5px;
+                    font-family: $font-secondary;
+                    color: $darkgray;
+                    font-size: 0.8rem;
+
+                    @include md {
+                        width: 8rem;
+                        font-size: 1rem;
+                        padding-left: 0;
+                    }
+
+                    @include lg {
+                        width: 13rem;
+                        height: 3.75rem;
+                        text-align: center;
+                    }
+                }
+
+                input[type="submit"] {
+                    width: 5rem;
+                    height: 2.2rem;
+                    background: linear-gradient(to right, #F23779, #FF6803, #FFA62E);
+                    color: $white;
+                    border: 0;
+                    border-radius: 0px 5px 5px 0px;
+                    margin-left: -5%;
+
+                    @include md {
+                        width: 4rem;
+                        font-size: 0.7rem;
+                    }
+                    @include lg {
+                        width: 8rem;
+                        height: 3.9rem;
+                        font-size: 1rem;
+                    }
+
+                }
+            }
+        }
+
+        .explore {
+
+            @include md {
+                padding-right: 2rem;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+
+                @include lg {
+                    font-size: 1.9rem;
+                }
+            }
+
+            ul {
+                column-count: 2;
+                list-style: none;
+                padding-left: 0;
+
+                li a {
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 0.8rem;
+
+                    @include lg {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .follow {
+
+            h1 {
+                font-size: 1.2rem;
+
+                @include lg {
+                    font-size: 1.9rem;
+                }
+            }
+
+            .social-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 0.3rem;
+
+                .box {
+                    border-radius: 5px;
+
+                    i {
+                        font-size: 1.5rem;
+                        padding: 0.7rem;
+
+                        @include md {
+                            font-size: 1rem;                            
+                        }
+
+                        @include lg {
+                            font-size: 1.5rem;
+                            padding: 1rem;                            
+                        }
+                    }
+                }
+                
+
+                #box-fb {
+                    background-color: #3054A4;
+                }
+
+                #box-twi {
+                    background-color: #55ACEE;
+                }
+
+                #box-insta
+                {
+                    background-color: #C42862;
+                }
+
+                #box-youtube {
+                    background-color: #CD201F;
+                }
+
+                #box-pin {
+                    background-color: #BD081C;
+                }
+
+            }
+
+            .contact {
+                font-family: $font-secondary;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+
+                p1 {
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

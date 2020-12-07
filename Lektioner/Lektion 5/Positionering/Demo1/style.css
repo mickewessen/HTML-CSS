@@ -1,0 +1,26 @@
+
+.container {
+    position: relative;
+}
+
+#parent {
+    position: relative;
+}
+
+#child-1{
+
+    position: static; 
+    position: relative;
+    position: absolute;
+    position: fixed;
+    position: sticky;
+
+    left: 0px;
+    top: 0px;
+    right: 10px;
+    bottom: 10px;
+
+    z-index: 0;
+
+}
+
