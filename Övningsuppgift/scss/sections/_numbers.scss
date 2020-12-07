@@ -87,9 +87,11 @@
         }
         #contact-us {
             padding-top: 1rem;
+            padding-bottom: 1rem;
             box-shadow: 3px 5px 12px #cac8c8;
             border-radius: 5px;
             text-align: center;
+
 
             @include md{
                 margin-bottom: 5rem;

@@ -1,16 +1,16 @@
 #header { 
-    display: none;  
     background-color: $gray;
     background-color: white;
-    height: 58rem;
-    background-image: url(../../backgrounds/header/Objects.svg), url(../../backgrounds/header/BG.svg);
-    background-repeat: no-repeat;
+
 
 
     @include xxl {
         display: flex;
         background-position: 75rem -3.75rem, 0px -29.25rem;
         background-size: auto, auto 150%;  
+        height: 58rem;
+        background-image: url(../../backgrounds/header/Objects.svg), url(../../backgrounds/header/BG.svg);
+        background-repeat: no-repeat;
     }
 
     .container {
